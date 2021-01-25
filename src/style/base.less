@@ -1,0 +1,75 @@
+@import '../assets/icons/iconfont.css';
+@import './minireset.min.less';
+
+@deep: ~'>>>';
+#app {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  
+  /* 重置部分viewUi样式 */
+  .ivu-btn:focus,
+  .ivu-input:focus,
+  .ivu-btn-focus,
+  .ivu-input-focus,
+  .ivu-select-visible .ivu-select-selection,
+  .ivu-checkbox-focus{
+    box-shadow: none;
+  }
+  .ivu-form-item-error .ivu-input:focus{
+    box-shadow: none;
+  }
+  input{
+    -webkit-appearance:none;
+  }
+  .ivu-input-suffix{
+    z-index: 9;
+  }
+  .ivu-form-item-error-tip{
+    font-size: 12px;
+    padding-top: 4px;
+  }
+  .ivu-input-large{
+    font-size: 14px;
+  }
+  .ivu-btn-large,
+  .ivu-input-group-large .ivu-input,
+  .ivu-input-group-large>.ivu-input-group-append,
+  .ivu-input-group-large>.ivu-input-group-prepend{
+    font-size: 14px;
+  }
+  .ivu-select-large.ivu-select-multiple .ivu-select-selection .ivu-select-placeholder,
+  .ivu-select-large.ivu-select-multiple .ivu-select-selection .ivu-select-selected-value{
+    font-size: 14px;
+  }
+  .ivu-select-large.ivu-select-single .ivu-select-selection .ivu-select-placeholder,
+  .ivu-select-large.ivu-select-single .ivu-select-selection .ivu-select-selected-value{
+    font-size: 14px;
+  }
+  .ivu-menu-dark.ivu-menu-vertical .ivu-menu-item,
+  .ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title{
+    opacity: 1;
+  }
+  // 分页
+  .page-wrap {
+    text-align: center;
+    padding-bottom: 28px;
+  }
+}
+
+// 解决分页乱码
+.ivu-page-item-jump-next:after,
+.ivu-page-item-jump-prev:after {
+  content: "\2022\2022\2022" !important;
+}
+
+/* 弹窗 */
+.ivu-modal{
+  .ivu-btn:focus,
+  .ivu-input:focus,
+  .ivu-checkbox-focus,
+  .ivu-checkbox-focus,
+  .ivu-select-visible .ivu-select-selection{
+    box-shadow: none;
+  }
+}

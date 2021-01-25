@@ -1,0 +1,53 @@
+.side-menu-wrapper {
+  user-select: none;
+  // 缩小之后
+  .menu-collapsed {
+    padding-top: 10px;
+    .ivu-dropdown {
+      width: 100%;
+      .ivu-dropdown-rel a {
+        width: 100%;
+      }
+    }
+    .ivu-tooltip {
+      width: 100%;
+      .ivu-tooltip-rel {
+        width: 100%;
+      }
+      .ivu-tooltip-popper .ivu-tooltip-content {
+        .ivu-tooltip-arrow {
+          border-right-color: #fff;
+        }
+        .ivu-tooltip-inner {
+          background: #fff;
+          color: #495060;
+        }
+      }
+    }
+    .drop-menu-a {
+      padding: 16px 28px;
+    }
+  }
+  // 展开的状态
+  .ivu-menu-item-group {
+    .ivu-menu-item-group-title{
+      height: 38px;
+      line-height: 38px;
+    }
+    .ivu-menu-item {
+      padding: 9px 24px 10px 42px;
+    }
+  }
+  .ivu-menu-item {
+    i{
+      margin-right: 8px;
+    }
+  }
+  .drop-menu-a {
+    display: inline-block;
+    padding: 6px 15px;
+    width: 100%;
+    text-align: center;
+    color: #495060;
+  }
+}
